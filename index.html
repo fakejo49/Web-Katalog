@@ -3,19 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPC — Katalog</title>
+  <title>IPC Katalog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="cart-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Keranjang Belanja</h2>
+
+    <ul id="cart-items"></ul>
+    <p id="cart-total"></p>
+    <div class="checkout-buttons">
+      <button id="wa-checkout">Checkout via WhatsApp<img src="img/wa.webp" height="20px"></button>
+      <button id="email-checkout">Checkout via Email<img src="img/email.png" height="20px"></button>
+      <button id="ig-checkout">Instagram<img src="img/ig.png" height="20px"></button>
+    </div>
+    <button id="close-cart">Tutup</button>
+  </div>
+</div>
   <header class="header">
     <div class="container header-content">
+      
       <div class="logo">
-        <img src="img/IPC.png" alt="" height="100px">
+        <img src="img/IPC.png" alt="Logo IPC" height="100px">
       </div>
+
       <div class="brand">
         <h1>Interastral Peace Corporation Market</h1>
-        <p>"Silahkan lihat beberapa produk dari kami."</p>
+        <p>"Menjual beberapa produk dan merchandise handmade."</p>
       </div>
+
       <div class="filters">
         <input type="text" id="search" placeholder="Cari produk..." />
         <select id="category">
@@ -31,6 +48,12 @@
           <option>Keychain</option>
         </select>
       </div>
+
+      <!-- Tombol keranjang (untuk akses modal keranjang) -->
+      <button id="open-cart" class="cart-btn">
+        <img src="img/cart.png" alt="Cart">
+        <span id="cart-count">0</span>
+      </button>
     </div>
   </header>
 
@@ -45,4 +68,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
