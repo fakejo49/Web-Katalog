@@ -373,3 +373,66 @@ body {
   color: white;
   font-size: 14px;
 }
+
+/* ================================
+   PROFILE SECTION
+================================ */
+
+.profile-section {
+  background: #ffffff;
+  padding: 50px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.profile-desc {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* TEAM GRID */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.team-card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
